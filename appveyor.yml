@@ -3,6 +3,11 @@ environment:
   matrix:
   # node.js
   - nodejs_version: "6"
+  - TEST_DIR: client
+  - TEST_DIR: api
+
+before_build:
+  - cd %TEST_DIR%
 
 # Install scripts. (runs after repo cloning)
 install:
