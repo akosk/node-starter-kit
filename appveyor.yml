@@ -6,7 +6,7 @@ environment:
   - TEST_DIR: client
   - TEST_DIR: api
 
-before_build:
+before_install:
   - cd %TEST_DIR%
 
 # Install scripts. (runs after repo cloning)
