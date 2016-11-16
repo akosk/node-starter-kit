@@ -6,9 +6,6 @@ environment:
   - TEST_DIR: client
   - TEST_DIR: api
 
-before_test:
-  - cd %TEST_DIR%
-
 # Install scripts. (runs after repo cloning)
 install:
   # Get the latest stable version of Node.js or io.js
