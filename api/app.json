@@ -1,5 +1,5 @@
 {
-  "name": "Node API example",
+  "name": "Node API example 2",
   "description": "A simple API built in Node and Express hosted on Heroku",
   "repository": "https://github.com/akosk/node-starter-kit.git",
   "keywords": ["node", "express", "static"]
