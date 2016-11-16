@@ -11,6 +11,7 @@
     "build": "babel src -d dist",
     "postbuild": "npm run serve",
     "serve": "node dist/index.js",
+    "deploy:heroku":"cd .. && git subtree push --prefix api heroku master",
     "test": "mocha --reporter progress buildScripts/testSetup.js \"src/**/*.test.js\"",
     "test:watch": "npm run test -- --watch"
 
