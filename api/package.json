@@ -4,13 +4,13 @@
   "description": "A simple API built in Node and Express hosted on Heroku",
   "main": "index.js",
   "scripts": {
-    "prestart":"npm run build",
-    "start": "node dist/index.js",
-    "predev": "babel-node buildScripts/startMessage.js",
-    "dev": "nodemon src/index.js --exec babel-node",
+    "prestart": "babel-node buildScripts/startMessage.js",
+    "start": "nodemon src/index.js --exec babel-node",
     "clean-dist": "rimraf ./dist && mkdir dist",
     "prebuild": "npm-run-all clean-dist",
     "build": "babel src -d dist",
+    "postbuild": "npm run serve",
+    "serve": "node dist/index.js",
     "test": "mocha --reporter progress buildScripts/testSetup.js \"src/**/*.test.js\"",
     "test:watch": "npm run test -- --watch"
 
